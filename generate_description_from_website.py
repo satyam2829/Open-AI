@@ -24,6 +24,7 @@ def get_cleaned_document(url):
     input = website_body.get_text()
     return input
 
+company_name = st.text_input("Enter the company name")
 website_url = st.text_input("Enter the website url")
 
 if st.button("SUBMIT"):
@@ -43,7 +44,7 @@ if st.button("SUBMIT"):
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": description_instruction + "\n" + input}
+            {"role": "user", "content": "company name: " + company_name + description_instruction + "\n" + input}
         ],
     )
 
