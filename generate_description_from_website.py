@@ -6,7 +6,7 @@ import requests
 import streamlit as st
 from bs4 import BeautifulSoup
 
-load_dotenv()
+# load_dotenv()
 openai.api_key = st.secrets("key")
 
 st.header("Generate description using Open AI")
