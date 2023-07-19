@@ -5,8 +5,6 @@ import openai
 import requests
 import streamlit as st
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
-from pymongo import MongoClient
 
 load_dotenv()
 openai.api_key = st.secrets("key")
