@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 # from pymongo import MongoClient
 
 # load_dotenv()
-openai.api_key = st.secrets["OPENAI_SECRET_KEY"]
+openai.api_key = st.secrets["openai_key"]
 
 st.header("Extract Funding and Financial Information")
 
