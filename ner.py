@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from pymongo import MongoClient
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_SECRET_KEY")
+openai.api_key = st.secrets["OPENAI_SECRET_KEY"]
 
 st.header("Extract Funding and Financial Information")
 
